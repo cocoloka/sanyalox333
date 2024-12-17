@@ -1,0 +1,379 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Шапка */
+.header {
+  background-color: #69d2e7;
+  color: white;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 80px; /* Увеличиваем отступ слева */
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.tagline {
+  font-size: 16px; /* Уменьшение размера текста */
+  color: rgb(0, 0, 0);
+  font-weight: 300; /* Легкий шрифт для контраста */
+  margin-top: 3px; /* Отступ сверху */
+}
+
+
+
+.nav .menu-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav .menu-btn:hover {
+  opacity: 0.8;
+}
+
+/* Главный блок */
+.hero {
+  background-color: #69d2e7;
+  color: white;
+  text-align: center;
+  padding: 150px 30px; /* Увеличиваем высоту синего блока */
+  margin-bottom: 200; /* Убираем отступ снизу, если он есть */
+}
+
+.hero-container {
+  position: relative;
+  transform: translateY(-50px); /* Поднимаем текст вверх */
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.hero-subtitle {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 0; /* Убрали лишний отступ */
+}
+
+/* Секция "About Us" */
+.about-us {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 100px 20px 60px;
+  margin-top: -10px; /* Сдвигаем секцию вверх */
+}
+
+
+/* Белая рамка */
+.about-content {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 40px 20px;
+  margin: -203px auto 50px auto;
+  max-width: 800px; /* Увеличиваем ширину */
+  width: 100%; /* Для адаптивности */
+  height: auto; /* Высота будет зависеть от содержимого */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 10;
+  position: relative;
+  font-size: 18px; /* Увеличиваем размер текста */
+  line-height: 1.8; /* Увеличиваем межстрочный интервал для читаемости */
+  text-align: left; /* Текст внутри выравнивается по правому краю */
+}
+/* Заголовок секции */
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Разделительная полоска */
+.divider {
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  width: 50%;
+  margin: -10px auto 20px auto; /* Поднимаем полоску на 10px */
+}
+
+/* Текстовое описание */
+.section-description {
+  font-size: 10px;
+  color: #000000;
+  line-height: 1;
+}
+
+/* Блок с иконками */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 190px; /* Увеличиваем горизонтальное и вертикальное расстояние */
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  width: 150px;
+  margin-bottom: 30px; /* Увеличиваем вертикальное расстояние между строками */
+}
+
+.feature img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Оранжевая секция */
+.orange-section {
+  background-color: #fa6900;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.orange-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-description {
+  font-size: 22px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #ffffff;
+  
+}
+
+ 
+.image-carousel {
+  position: relative;
+  height: 300px; /* Установите высоту контейнера */
+}
+
+.carousel-images img {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 50%; /* Смещаем к центру по вертикали */
+  left: 50%; /* Смещаем к центру по горизонтали */
+  transform: translate(-50%, -50%); /* Центрируем */
+ 
+  height: 350px;
+  width: 1100px;
+  
+}
+
+.carousel-images img.active {
+  display: block;
+}
+
+/* Кнопки навигации 
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  opacity: 0.8;
+}*/
+
+/* Стили для секции с участниками 
+.team-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.team-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.team-member {
+  display: none;
+  text-align: center;
+  max-width: 200px;
+  margin: 0 20px;
+}
+
+.team-member.active {
+  display: block;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #555;
+}
+
+ Индикаторы точек 
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #00a9e0;
+}
+
+.dot:hover {
+  background-color: #fa6900;
+}*/
+
+
+
+
+
+.filter-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+#filter-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#filter-button:hover {
+  background-color: #0056b3;
+}
+
+#car-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.car {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.car img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
